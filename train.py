@@ -51,6 +51,7 @@ def main():
         MetadataCatalog.get("balloon_" + d).set(thing_classes=["balloon"])
     balloon_metadata = MetadataCatalog.get("balloon_train")
 
+    # Wrap the Detectron Default Trainer
     trainer = CometDefaultTrainer(cfg, experiment)
     trainer.resume_or_load(resume=False)
     trainer.train()

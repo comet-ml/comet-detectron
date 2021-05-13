@@ -10,6 +10,13 @@ from fvcore.common.config import CfgNode
 
 
 def log_config(cfg, experiment):
+    """Traverse the Detectron Config graph and log the parameters
+
+    Args:
+        cfg (CfgNode): Detectron Config Node
+        experiment (comet_ml.Experiment): [description]
+    """
+
     def log_node(node, prefix):
         if not isinstance(node, CfgNode):
             if isinstance(node, dict):
@@ -31,7 +38,8 @@ class CometDefaultTrainer(DefaultTrainer):
     def __init__(self, cfg, experiment):
         """
         Args:
-            cfg (CfgNode):
+            cfg (CfgNode): Detectron Config Node
+            experiment (comet_ml.Experiment): Comet Experiment object
         """
         super().__init__(cfg)
         self.experiment = experiment

@@ -9,7 +9,7 @@ pip install -r requirements.txt
 
 ## Install Detectron2
 ```
-python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+pip install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/torch1.8/index.html
 ```
 
 ## Download Data

@@ -199,7 +199,8 @@ class CometDefaultTrainer(DefaultTrainer):
 
             self.experiment.log_metrics(metrics_dict, prefix=prefix)
             self.experiment.log_metric(
-                total_losses_reduced, "{}total_loss".format(prefix)
+                "{}total_loss".format(prefix),
+                total_losses_reduced,
             )
             storage.put_scalar("{}total_loss".format(prefix), total_losses_reduced)
             if len(metrics_dict) > 1:

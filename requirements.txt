@@ -13,7 +13,6 @@ configobj==5.0.6
 cycler==0.10.0
 Cython==0.29.23
 decorator==5.0.7
-detectron2==0.4+cu101
 dulwich==0.20.21
 everett==1.0.3
 future==0.18.2

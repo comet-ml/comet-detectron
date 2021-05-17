@@ -31,7 +31,7 @@ def log_config(cfg, experiment):
                 experiment.log_parameters(node, prefix=prefix)
 
             else:
-                experiment.log_parameter(prefix, node)
+                experiment.log_parameter(name=prefix, value=node)
             return
 
         node_dict = dict(node)

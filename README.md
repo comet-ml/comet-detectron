@@ -2,14 +2,14 @@
 
 This project demonstrates how to setup Comet to log parameters and metrics from Detectron. We will run the example from this [Colab Notebook](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5?usp=sharing)
 
+## Install Dependencies
+```
+pip install -r requirements.txt
+```
+
 ## Install Detectron2
 ```
 python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
-```
-
-## Install Other Dependencies
-```
-pip install -r requirements.txt
 ```
 
 ## Download Data
